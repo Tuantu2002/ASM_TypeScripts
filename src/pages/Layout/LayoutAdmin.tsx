@@ -1,20 +1,23 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import React from 'react'
-import HeaderAdmin from '../../components/header'
-import { Outlet } from 'react-router-dom'
-import BannerAdmin from '../../components/banner'
-import FooterAdmin from '../../components/footer'
+import React from "react";
+import HeaderAdmin from "../../components/HeaderAdmin";
+import { Outlet } from "react-router-dom";
+import NavAdmin from "../../components/Nav";
 
-
-
-const LayOutClientAdmin = () => {
+const LayOutAdmin = () => {
   return (
-        <div>
-         ahihi
-              
-        </div>
-  
-  )
-}
+    <div>
+      <div>
+        <header>
+          <HeaderAdmin />
+          <NavAdmin />
+        </header>
+        <main>
+          <Outlet />
+        </main>
+      </div>
+    </div>
+  );
+};
 
-export default LayOutClientAdmin
+export default LayOutAdmin;

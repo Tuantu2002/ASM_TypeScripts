@@ -1,17 +1,19 @@
 import api from "./axios"
 
 export const getProducts = () => {
-    return api.get('/products')
+    return api.get('/product')
 }
 export const getProduct = (_id : string | undefined) => {
-    return api.get(`/products/${_id}`)
+    return api.get(`/product/${_id}`)
 }
 export const createProduct = (data: any) => {
-    return api.post('/products', data)
+    return api.post('/product', data)
 } 
 export const deleteProduct = (_id : number | string) => {
-    return api.delete(`/products/${_id}`)
+    return api.delete(`/product/${_id}`)
 }
 export const updateProduct = (_id : string | undefined , data: any) => {
-    return api.put(`/products/${_id}`)
+    console.log(_id);
+    
+    return api.put(`/product/${_id}`, data )
 }

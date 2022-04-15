@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react'
 import { Link } from 'react-router-dom';
-const HeaderAdmin = () => {
+const HeaderClientLayout = () => {
   return (
     <div>  
           <div className="header-area">
@@ -14,7 +14,8 @@ const HeaderAdmin = () => {
               <li><a href="#"><i className="fa fa-heart" /> Wishlist</a></li>
               <li><a href="cart.html"><i className="fa fa-user" /> My Cart</a></li>
               <li><a href="checkout.html"><i className="fa fa-user" /> Checkout</a></li>
-              <li><a href="#"><i className="fa fa-user" /> Login</a></li>
+              <li><a href="/SignUp"><i className="fa fa-user" /> Login</a></li>
+              <li><a href="#"><i className="fa fa-user" /> NGUYEN TUAN TU - PH14942</a></li>
             </ul>
           </div>
         </div>
@@ -73,7 +74,7 @@ const HeaderAdmin = () => {
         <div className="navbar-collapse collapse">
           <ul className="nav navbar-nav"  >
             <li className="active"><Link to={'/'}>Home</Link></li>
-            <li><Link to={'/products'}>Product</Link></li>
+            <li><Link to={'/product'}>Product</Link></li>
             <li><a href="checkout.html">Checkout</a></li>
             <li><a href="#">Category</a></li>
             <li><a href="#">Others</a></li>
@@ -88,4 +89,4 @@ const HeaderAdmin = () => {
   )
 }
 
-export default HeaderAdmin;
+export default HeaderClientLayout;

@@ -19,7 +19,7 @@ const handleGetProducts =  async() => {
   const response = await getProducts();
   setProducts(response.data);
 }
-
+  
 useEffect(() => {
   handleGetProducts();
 } , [])
@@ -51,10 +51,10 @@ useEffect(() => {
         <div className="single-shop-product">
           <div className="product-upper">
             <Link to={`${product._id}`}>
-            <img src="img/product-4.jpg"  />
+            <img src={product.img}  />
            </Link>
           </div>
-          <h2><a >{product.name}</a></h2>
+          <h2><a href=''  ><Link to={`/product/${product._id}`}>{product.name}</Link></a></h2>
           <div className="product-carousel-price">
             <ins>{product.price}</ins> <del>$999.00</del>
           </div>  

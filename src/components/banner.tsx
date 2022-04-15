@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BannerAdmin = () => {
+const BannerClientLayout = () => {
   return (
     <div>
   <div className="slider-area">
@@ -25,4 +25,4 @@ const BannerAdmin = () => {
   )
 }
 
-export default BannerAdmin;
+export default BannerClientLayout;

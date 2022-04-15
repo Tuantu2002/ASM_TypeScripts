@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FooterAdmin = () => {
+const FooterClientLayout = () => {
   return (
     <div>
 
@@ -67,4 +67,4 @@ const FooterAdmin = () => {
   )
 }
 
-export default FooterAdmin
+export default FooterClientLayout;
